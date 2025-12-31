@@ -187,49 +187,28 @@ python train_model.py
 
 ## ⚙️ Configuration
 
-### Environment Variables
+### Quick Setup
 
-**⚠️ IMPORTANT: Never commit actual credentials to Git!**
-
-1. Copy the example environment file:
+1. **Backend Configuration:**
    ```bash
    cd backend
    cp .env.example .env
+   # Edit .env file with your credentials
    ```
 
-2. Edit `.env` file with your actual credentials:
-   ```env
-   # Server Configuration
-   PORT=5000
-   NODE_ENV=development
-   CORS_ORIGIN=http://localhost:3000
-
-   # Firebase Configuration
-   FIREBASE_API_KEY=your_firebase_api_key
-   FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-   FIREBASE_PROJECT_ID=your_project_id
-   FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
-   FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-   FIREBASE_APP_ID=your_app_id
-   FIREBASE_MEASUREMENT_ID=your_measurement_id
-
-   # Google Cloud Platform
-   GOOGLE_CLOUD_PROJECT_ID=your_gcp_project_id
-   GOOGLE_CLOUD_KEY_FILE=./google-service-account-key.json
-   GCP_VISION_API_KEY=your_vision_api_key
+2. **Frontend Configuration:**
+   ```bash
+   cd frountend
+   cp firebase-config.example.js firebase-config.js
+   # Edit firebase-config.js with your Firebase credentials
    ```
 
-3. Also configure frontend:
-   - Copy `frountend/firebase-config.example.js` to `frountend/firebase-config.js`
-   - Update `frountend/index.html` with your Firebase config
+3. **Get Your Credentials:**
+   - **Firebase**: [Firebase Console](https://console.firebase.google.com/) → Project Settings
+   - **Google Cloud**: [GCP Console](https://console.cloud.google.com/) → APIs & Services
 
-See [SECURITY.md](SECURITY.md) for detailed security instructions.
-
-### Getting API Keys
-
-1. **Firebase**: Go to [Firebase Console](https://console.firebase.google.com/) → Project Settings → General
-2. **Google Cloud**: Go to [GCP Console](https://console.cloud.google.com/) → APIs & Services → Credentials
-3. **Vision API**: Enable Vision API in GCP Console and create service account key
+**📖 For detailed setup instructions, see [SETUP_GUIDE.md](SETUP_GUIDE.md)**  
+**🔒 For security best practices, see [SECURITY.md](SECURITY.md)**
 
 ---
 
