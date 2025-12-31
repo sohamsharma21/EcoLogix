@@ -153,7 +153,7 @@ npm install
 cp .env.example .env
 
 # Edit .env file with your credentials
-# See Configuration section below
+# See SETUP_GUIDE.md for detailed instructions
 ```
 
 ### Step 3: Frontend Setup
