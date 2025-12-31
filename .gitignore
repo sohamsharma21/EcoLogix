@@ -55,6 +55,12 @@ firebase-debug.log
 .firebase/
 firebase-export-*.json
 
+# Configuration files with sensitive data (keep example files)
+frountend/firebase-config.js
+!frountend/firebase-config.example.js
+backend/config.js
+!backend/config.example.js
+
 # Google Cloud
 *.json
 !package.json

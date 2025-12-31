@@ -31,8 +31,8 @@ CORS_ORIGIN=http://localhost:3000
 # Firebase Configuration
 FIREBASE_PROJECT_ID=your_project_id
 FIREBASE_API_KEY=your_firebase_api_key
-FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
-FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
+FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
 FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
 FIREBASE_APP_ID=your_app_id
 FIREBASE_MEASUREMENT_ID=your_measurement_id
@@ -74,11 +74,13 @@ Then open `http://localhost:3000` in your browser.
 
 ## Firebase Configuration
 
-### Current Setup
-Firebase configuration is required:
-- **Project ID**: Set in `.env` file
-- **Database**: Firestore
-- **Real-time Alerts**: Enabled
+### Firebase Setup
+To configure Firebase:
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Create a new project or select existing one
+3. Go to Project Settings → General
+4. Copy your Firebase config and add to `.env` file
+5. Update `frountend/firebase-config.js` and `frountend/index.html` with your config
 
 ### Firebase Features Enabled
 ✅ **Firestore Database** - Stores alerts and notifications
