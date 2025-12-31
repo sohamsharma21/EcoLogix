@@ -189,35 +189,41 @@ python train_model.py
 
 ### Environment Variables
 
-Create a `.env` file in the `backend` directory with the following variables:
+**⚠️ IMPORTANT: Never commit actual credentials to Git!**
 
-```env
-# Server Configuration
-PORT=5000
-NODE_ENV=development
-CORS_ORIGIN=http://localhost:3000
+1. Copy the example environment file:
+   ```bash
+   cd backend
+   cp .env.example .env
+   ```
 
-# Firebase Configuration
-FIREBASE_API_KEY=your_firebase_api_key
-FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
-FIREBASE_PROJECT_ID=your_project_id
-FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
-FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
-FIREBASE_APP_ID=your_app_id
-FIREBASE_MEASUREMENT_ID=your_measurement_id
+2. Edit `.env` file with your actual credentials:
+   ```env
+   # Server Configuration
+   PORT=5000
+   NODE_ENV=development
+   CORS_ORIGIN=http://localhost:3000
 
-# Firebase Service Account (Optional - for production)
-# FIREBASE_SERVICE_ACCOUNT={"type":"service_account","project_id":"..."}
+   # Firebase Configuration
+   FIREBASE_API_KEY=your_firebase_api_key
+   FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+   FIREBASE_PROJECT_ID=your_project_id
+   FIREBASE_STORAGE_BUCKET=your_project.firebasestorage.app
+   FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   FIREBASE_APP_ID=your_app_id
+   FIREBASE_MEASUREMENT_ID=your_measurement_id
 
-# Google Cloud Platform
-GOOGLE_CLOUD_PROJECT_ID=your_gcp_project_id
-GOOGLE_CLOUD_KEY_FILE=./google-service-account-key.json
-GCP_VISION_API_KEY=your_vision_api_key
+   # Google Cloud Platform
+   GOOGLE_CLOUD_PROJECT_ID=your_gcp_project_id
+   GOOGLE_CLOUD_KEY_FILE=./google-service-account-key.json
+   GCP_VISION_API_KEY=your_vision_api_key
+   ```
 
-# Hugging Face (Optional)
-HUGGINGFACE_API_URL=https://api-inference.huggingface.co/models/...
-HUGGINGFACE_API_TOKEN=your_huggingface_token
-```
+3. Also configure frontend:
+   - Copy `frountend/firebase-config.example.js` to `frountend/firebase-config.js`
+   - Update `frountend/index.html` with your Firebase config
+
+See [SECURITY.md](SECURITY.md) for detailed security instructions.
 
 ### Getting API Keys
 
