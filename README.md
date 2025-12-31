@@ -198,13 +198,13 @@ NODE_ENV=development
 CORS_ORIGIN=http://localhost:3000
 
 # Firebase Configuration
-FIREBASE_API_KEY=AIzaSyDvfOBRgHDzbwtN-dhBiLxpNiMHcW7kmzE
-FIREBASE_AUTH_DOMAIN=vehiclewatch-927ac.firebaseapp.com
-FIREBASE_PROJECT_ID=vehiclewatch-927ac
-FIREBASE_STORAGE_BUCKET=vehiclewatch-927ac.firebasestorage.app
-FIREBASE_MESSAGING_SENDER_ID=1003751681542
-FIREBASE_APP_ID=1:1003751681542:web:2d5696ee51901e4ee71d87
-FIREBASE_MEASUREMENT_ID=G-X9LJF8X0B0
+FIREBASE_API_KEY=your_firebase_api_key
+FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
+FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+FIREBASE_APP_ID=your_app_id
+FIREBASE_MEASUREMENT_ID=your_measurement_id
 
 # Firebase Service Account (Optional - for production)
 # FIREBASE_SERVICE_ACCOUNT={"type":"service_account","project_id":"..."}

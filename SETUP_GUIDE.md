@@ -28,14 +28,14 @@ PORT=5000
 NODE_ENV=development
 CORS_ORIGIN=http://localhost:3000
 
-# Firebase (Already configured)
-FIREBASE_PROJECT_ID=vehiclewatch-927ac
-FIREBASE_API_KEY=AIzaSyDvfOBRgHDzbwtN-dhBiLxpNiMHcW7kmzE
-FIREBASE_AUTH_DOMAIN=vehiclewatch-927ac.firebaseapp.com
-FIREBASE_STORAGE_BUCKET=vehiclewatch-927ac.firebasestorage.app
-FIREBASE_MESSAGING_SENDER_ID=1003751681542
-FIREBASE_APP_ID=1:1003751681542:web:2d5696ee51901e4ee71d87
-FIREBASE_MEASUREMENT_ID=G-X9LJF8X0B0
+# Firebase Configuration
+FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_API_KEY=your_firebase_api_key
+FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+FIREBASE_STORAGE_BUCKET=your_project_id.firebasestorage.app
+FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+FIREBASE_APP_ID=your_app_id
+FIREBASE_MEASUREMENT_ID=your_measurement_id
 
 # Google Cloud (Optional)
 GOOGLE_CLOUD_PROJECT_ID=your_project_id
@@ -75,8 +75,8 @@ Then open `http://localhost:3000` in your browser.
 ## Firebase Configuration
 
 ### Current Setup
-Firebase is already configured with the following project:
-- **Project ID**: `vehiclewatch-927ac`
+Firebase configuration is required:
+- **Project ID**: Set in `.env` file
 - **Database**: Firestore
 - **Real-time Alerts**: Enabled
 
